@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     input:checked{
+        color:orange;
+        background:orange;
+     }
+
+     input[type='checkbox']{
+        appearance:none;
+        outline:none;
+        width:100px;
+        height:40px;
+       background:orange;
+     }
+     input[type='checkbox']::before{
+        content:"Menu";
+        width:100px;
+        height:40px;
+        text-align:center;
+
+     }
+     label{
+        display:none;
+     }
+     input:checked + label{
+        display:block;
+      
+     }
+
+     input:not(:checked )+ label{
+        display:none;
+      
+     }
+     input:checked{
+        color:orange;
+        background:orange;
+       
+     }
+
+     .bb{
+        position: relative;
+
+     }
+     .bb input{
+        position: absolute;
+     }
+     .bb label{
+       position:absolute;
+     }
+
+     @media((min-width:850px) && (max-width:1200px)){
+
+     }
+
+   
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="innerbox">
+        <h1>THE KING</h1>
+        <p>"This is a new look of things in town"</p>
+        <section class="price"></section>
+    </div>
+</div>
+
+<div class="list">
+    <ul>
+        <li class="col">This what i want</li>
+        <li class="col">This what i want</li>
+        <li class="col">This what i want</li>
+        <li class="col">This what i want</li>
+        <li class="col">This what i want</li>
+    </ul>
+
+
+   
+   <div class="bb">
+    <input type="checkbox" name="" id=""><label>kaka</label>
+   </div>
+   <input type="checkbox" name="" id=""><label for="">Juli</label>
+   <input type="checkbox" name="" id=""><label for="">Philip</label>
+
+   <div class="box">
+    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</div>
+    <div class="col">Explicabo odit eveniet fuga aliquam temporibus commodi quasi, dolor quaerat.</div>
+    <div class="col">Magni laudantium necessitatibus voluptate ullam atque consequatur expedita ea facere!</div>
+   </div>
+
+   <div>
+  <select name="" id="">
+    <option value="">Text 1</option>
+    <option value="">Text 2</option>
+    <option value="">Text 3</option>
+    <option value="">Text 4</option>
+  </select>
+   </div>
+</div>
+</body>
+</html>
